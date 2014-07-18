@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="c1d06f67-e7cb-4df1-b93d-2ee8e1b5193b" Version="1.0" Language="en-US" Publisher="Zudio" />
+    <Identity Id="c1d06f67-e7cb-4df1-b93d-2ee8e1b5193b" Version="1.1" Language="en-US" Publisher="Zudio" />
     <DisplayName>NoGit</DisplayName>
     <Description>Disables the Git Source Control Provider when a solution is opened.</Description>
     <License>License.txt</License>
