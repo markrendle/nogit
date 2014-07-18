@@ -93,64 +93,75 @@ namespace Zudio.NoGit
 
         public int OnAfterOpenProject(IVsHierarchy pHierarchy, int fAdded)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnQueryCloseProject(IVsHierarchy pHierarchy, int fRemoving, ref int pfCancel)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnBeforeCloseProject(IVsHierarchy pHierarchy, int fRemoved)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnAfterLoadProject(IVsHierarchy pStubHierarchy, IVsHierarchy pRealHierarchy)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnQueryUnloadProject(IVsHierarchy pRealHierarchy, ref int pfCancel)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnBeforeUnloadProject(IVsHierarchy pRealHierarchy, IVsHierarchy pStubHierarchy)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnAfterOpenSolution(object pUnkReserved, int fNewSolution)
         {
-            var getProvider = GetService(typeof (IVsRegisterScciProvider)) as IVsGetScciProviderInterface;
-            if (getProvider != null)
-            {
-                var provider = getProvider.GetProvider();
-                if (provider != null)
-                {
-                    if (provider.GetType().Namespace == "Microsoft.TeamFoundation.Git.Provider")
-                    {
-                        provider.SetInactive();
-                    }
-                }
-            }
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnQueryCloseSolution(object pUnkReserved, ref int pfCancel)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnBeforeCloseSolution(object pUnkReserved)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
         }
 
         public int OnAfterCloseSolution(object pUnkReserved)
         {
+            SetScciProviderInactive();
             return VSConstants.S_OK;
+        }
+
+        private void SetScciProviderInactive()
+        {
+            var getProvider = GetService( typeof( IVsRegisterScciProvider ) ) as IVsGetScciProviderInterface;
+            if ( getProvider != null )
+            {
+                var provider = getProvider.GetProvider();
+                if ( provider != null )
+                {
+                    provider.SetInactive();
+                }
+            }
         }
     }
 
