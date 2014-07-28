@@ -140,7 +140,7 @@
             if (getProvider != null)
             {
                 IVsSccProvider provider = getProvider.GetProvider();
-                if (provider != null && provider.GetType().Namespace == "Microsoft.TeamFoundation.Git.Provider")
+                if (provider != null)
                 {
                     provider.SetInactive();
                 }
