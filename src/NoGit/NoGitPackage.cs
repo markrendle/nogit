@@ -5,7 +5,6 @@
     using System.Diagnostics;
     using System.Globalization;
     using System.Runtime.InteropServices;
-    using EnvDTE;
     using Microsoft.VisualStudio;
     using Microsoft.VisualStudio.Shell;
     using Microsoft.VisualStudio.Shell.Interop;
@@ -135,7 +134,6 @@
 
         private void SetScciProviderInactive()
         {
-
             var getProvider = GetService(typeof (IVsRegisterScciProvider)) as IVsGetScciProviderInterface;
             if (getProvider != null)
             {
