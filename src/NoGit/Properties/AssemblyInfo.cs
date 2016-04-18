@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NoGit")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Zudio")]
+[assembly: AssemblyCompany("RendleLabs")]
 [assembly: AssemblyProduct("NoGit")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
@@ -29,8 +29,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.2.0.0")]
 
 [assembly: InternalsVisibleTo("NoGit_IntegrationTests, PublicKey=002400000480000094000000060200000024000052534131000400000100010083eecf1d8bad04d6fcab542a58cf1b8fd5103986f8d7e9f370c9b9dbfec213cde552357d7f2c5a5f555db85d462cc3646f8444282083a663c203a120505fc3ec3c67ab39a8cce781845fc3837cd4d69802baf94bf8ffa209da85302a3157069d7cd75c22662ab4ff5e4f389ad3776d8b8c7f0e5e1edff495395ba409ab508193")]
 [assembly: InternalsVisibleTo("NoGit_UnitTests, PublicKey=002400000480000094000000060200000024000052534131000400000100010083eecf1d8bad04d6fcab542a58cf1b8fd5103986f8d7e9f370c9b9dbfec213cde552357d7f2c5a5f555db85d462cc3646f8444282083a663c203a120505fc3ec3c67ab39a8cce781845fc3837cd4d69802baf94bf8ffa209da85302a3157069d7cd75c22662ab4ff5e4f389ad3776d8b8c7f0e5e1edff495395ba409ab508193")]

@@ -2,7 +2,7 @@
 // MUST match guids.h
 using System;
 
-namespace Zudio.NoGit
+namespace RendleLabs.NoGit
 {
     static class GuidList
     {

@@ -1,4 +1,4 @@
-﻿namespace Zudio.NoGit
+﻿namespace RendleLabs.NoGit
 {
     using System;
     using System.Collections.Generic;
